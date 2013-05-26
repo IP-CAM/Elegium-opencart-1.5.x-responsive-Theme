@@ -1,0 +1,546 @@
+﻿/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+	#menu-wrapper,
+	#menu-mobile-wrapper,
+	#header-wrapper, 
+	#container-wrapper {
+		width: 740px;
+		margin: auto;
+		}
+	
+	/* begin hidden */
+	.nivoSlider,
+	.banner,
+	.category-info p img,
+	.slider-shadow,
+	#menu-area,
+	#header #cart,
+	#column-left,
+	#column-right {
+		display: none !important;
+		}
+	/* end hidden */	
+		
+	/* begin header */
+	#header {
+		height: auto;
+		text-align: center;
+		position: relative;
+		}
+	#header #logo {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 40px;
+		margin-bottom: 15px;
+		}
+	#header #logo img {
+		max-width: 240px;
+		}
+	#header #welcome {
+		position: static;
+		text-align: center;
+		line-height: 19px;
+		}
+	#header #search {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 15px;
+		}
+	#header .button-search {
+		top: 0;
+		right: 0;
+		}
+	#header .links {
+		position: static;
+		margin-bottom: 20px;
+		}
+	#header .links a {
+		float: none;
+		display: inline-block;
+		padding-top: 10px;
+		font-size: 13px;
+		background-position: 0 80%;
+		}
+	#header .links a:hover {
+		color: #666;
+		}
+	.text-home {
+		display: block;
+		background: none;
+		color: #666;
+		}
+	#wishlist-total {
+		background: url(../image/arrow-right-small.png) 0 80% no-repeat;
+		}
+	#language {
+		right: 140px;
+		margin-top: -42px;
+		}
+	#currency {
+		right: 0;
+		margin-top: -42px;
+		}
+	/* end header */
+
+	/* begin menu-mobile */
+	#menu-mobile {
+		display: block;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		background: #444 url(../image/menu-bg.png) repeat;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		border-radius: 3px;
+		}
+	#menu-mobile-icon {
+		display: block;
+		cursor: pointer;
+		padding: 7px;
+		}
+	#menu-mobile-nav {
+		display: none;
+		clear: both;
+		}
+	#menu-mobile-nav ul {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		}
+	#menu-mobile-nav ul li{
+		text-align: center;
+		}
+	#menu-mobile-nav ul li a {
+		display: block;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 13px;
+		color: #666;
+		line-height: 33px;
+		background: #F8F8F8;
+		border-bottom: 1px solid #E0E0E0;
+		border-left: 1px solid #E0E0E0;
+		border-right: 1px solid #E0E0E0;
+		}
+	#menu-mobile-nav ul li a:hover {
+		background: #f2f2f2;
+		text-decoration: none;
+		}
+	/* end menu-mobile */
+		
+	/* begin other */
+	#container {
+		padding: 15px 15px 0 15px;
+		}
+	.breadcrumb {
+		margin: 0 0 25px 0;
+		}
+	#column-left + #column-right + #content,#column-left + #content, #column-right + #content {
+		float: none;
+    	margin: 0;
+		}
+	#footer .column1, #footer .column2, #footer .column3, #footer .column4 {
+		width: 16.5%;
+		}
+	.column-contacts {
+		width: 24%;
+		}
+	#scroll-to-top {
+		bottom: 5px;
+		right: 5px;
+		}
+	.welcome-message a img {
+		max-width: 340px;
+		max-height: 110px;
+		}
+	/* end other */
+		
+}
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 750px) {
+	#menu-wrapper, 
+	#header-wrapper, 
+	#container-wrapper {
+		width: auto !important;
+		}
+	
+	/* begin hidden */
+	.wishlist-info thead .model,
+	.wishlist-info tbody .model,
+	.wishlist-info thead .stock,
+	.wishlist-info tbody .stock,
+	.wishlist-info thead .image,
+	.wishlist-info tbody .image,
+	.cart-info .image,
+	.cart-info .model,
+	.cart-info .price,
+	.button-cart-mobile,
+	.jcarousel-skin-opencart,
+	.nivoSlider,
+	.banner,
+	.category-info p img,
+	.slider-shadow,
+	#menu-area,
+	#header #cart,
+	#column-left, 
+	#column-right,
+	#footer,
+	#scroll-to-top {
+		display: none !important;		
+		}
+	/* end hidden */
+	
+	/* begin header */
+	#header {
+		height: auto;
+		text-align: center;
+		position: static;
+		}
+	#header #logo {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 40px;
+		margin-bottom: 15px;
+		}
+	#header #logo img {
+		max-width: 240px;
+		}
+	#header #welcome {
+		position: static;
+		text-align: center;
+		line-height: 19px;
+		}
+	#header #search {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 15px;
+		}
+	#header .button-search {
+		top: 0;
+		right: 0;
+		}
+	#header .links {
+		position: static;
+		margin-bottom: 20px;
+		}
+	#header .links a {
+		float: none;
+		display: inline-block;
+		padding-top: 10px;
+		font-size: 13px;
+		background-position: 0 80%;
+		}
+	#header .links a:hover {
+		color: #666;
+		}
+	.text-home {
+		display: block;
+		background: none;
+		color: #666;
+		}
+	#wishlist-total {
+		background: url(../image/arrow-right-small.png) 0 80% no-repeat;
+		}
+	#language {
+		right: 140px;
+		margin-top: 5px;
+		}
+	#currency {
+		right: 5px;
+		margin-top: 5px;
+		}
+	/* end header */
+
+	/* begin menu-mobile */
+	#menu-mobile {
+		display: block;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		background: #444 url(../image/menu-bg.png) repeat;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		border-radius: 3px;
+		}
+	#menu-mobile-icon {
+		display: block;
+		cursor: pointer;
+		padding: 7px;
+		}
+	#menu-mobile-nav {
+		display: none;
+		clear: both;
+		}
+	#menu-mobile-nav ul {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		}
+	#menu-mobile-nav ul li{
+		text-align: center;
+		}
+	#menu-mobile-nav ul li a {
+		display: block;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 13px;
+		color: #666;
+		line-height: 33px;
+		background: #F8F8F8;
+		border-bottom: 1px solid #E0E0E0;
+		border-left: 1px solid #E0E0E0;
+		border-right: 1px solid #E0E0E0;
+		}
+	#menu-mobile-nav ul li a:hover {
+		background: #f2f2f2;
+		text-decoration: none;
+		}
+	/* end menu-mobile */
+						
+	/* begin box */
+	.box-product {
+		text-align: center;
+		}
+	.box .box-heading,
+	#column-left + #content .box .box-heading,
+	#column-left + #column-right + #content .box .box-heading {
+		margin-left: -11px;
+		}
+	/* end box */
+	
+	/* begin product page */
+	.product-info {
+		overflow: hidden;
+		text-align: center;
+		}
+	.product-info > .left + .right {
+		margin-top: 15px;
+		margin-left: 0px;
+		}
+	.product-info > .left, .product-info .image, 
+	.product-info .image-additional {
+		float: none;
+		margin-right: 0px;
+		width: auto;
+		}
+	.product-info .image img {
+		max-width: 100%;
+		}
+	.product-info .image-additional a {
+		float: none;
+		display: inline-block;
+		margin: 5px;
+		}
+	.price-container {
+		background-image: none;
+		margin-left: 0px;
+		display: inline-block;
+		}
+	.product-info .price {
+		width: auto;
+		font-size: 26px;
+		color: #EE4E90;
+		line-height: 36px;
+		padding-top: 0px;
+		margin-top: -10px;
+		}
+	.product-info .cart {
+		margin-top: -15px;
+		}
+	.product-info .review .share {
+		display: inline-block;
+		}
+	.htabs {
+		height: auto;
+		}
+	.htabs a {
+		float: none;
+		display: block;
+		margin-right: 0px;
+		}
+	.htabs a:hover {
+		background: #fff;
+		}
+	.tags {
+		margin-top: -10px;
+		margin-bottom: 15px;
+		}
+	/* end product page */
+	
+	/* begin footer-menu-mobile */
+	#footer-mobile {
+		display: block;
+		font-family: 'Ubuntu', Arial, sans-serif;
+		}
+    .footer-menu-mobile h3 {
+        display: block;
+        width: 100%;
+       	margin: 0;
+        text-align: center;
+        font-weight: normal;
+        font-size: 13px;
+        background: #444 url(../image/footer-menu-mobile-bg.png) repeat-x;
+        cursor: pointer;
+        line-height: 35px;
+        color: #eee;
+        }
+    .footer-menu-mobile div li {
+        list-style: none;
+        text-align: center;
+        line-height: 33px;
+        color: #666;
+        background: #eee;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #dadada;
+        }
+    .footer-menu-mobile div li a {
+        color: #666;
+        font-size: 13px;
+        text-decoration: none;
+        }
+	.footer-menu-mobile div li:hover {
+        background: #e9e9e9;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #dadada;
+        }
+    .footer-menu-mobile div a {
+        font-size: 13px;
+        display: block;
+        }
+    /* end footer-menu-mobile */
+	
+	/* begin other */
+	body {
+		padding: 0 5px 0 5px;
+		}
+	#container {
+		padding: 10px 10px 0 10px;
+		}
+	.breadcrumb {
+		margin: 0 0 25px 0;
+		}
+	.product-filter .display {
+		margin-bottom: 5px;
+		}
+	#content .content {
+		overflow: hidden;
+		}
+	#column-left + #column-right + #content,
+	#column-left + #content,
+	#column-right + #content {
+		float: none;
+    	margin: 0;
+		}
+	.login-content .left,
+	.login-content .right {
+		float: none;
+		width: 100%;
+		}
+	#content .content .left,
+	#content .content .right,
+	.return-name,
+	.return-model,
+	.return-quantity,
+	.return-reason,
+	.return-opened,
+	.return-captcha {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		}
+	textarea {
+		width: 90% !important;
+		}
+	#powered {
+		margin: 0;
+		background: none;
+		border-top: 1px solid #cecece;
+		}
+	.category-list span {
+		margin-bottom: 10px;
+		}
+	/* end other */
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 0px) and (max-width: 340px) {
+
+	/* begin header */	
+	#header #logo img {
+		max-width: 72%;
+		}
+	#header #search input {
+		width: 160px !important;
+		height: 22px;
+		font-size: 13px;
+		}
+	#header .button-search {
+		height: 26px;
+		}
+	#header #welcome {
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+	/* end header */
+	
+	/* begin other */
+	h1 {
+	font-size: 22px;
+		}
+	table select {
+		width: 90%;
+		}
+	input[type="text"], 
+	input[type="password"] {
+		max-width: 80% !important;
+		}
+	table.form tr td:first-child {
+		width: 0px;
+		}
+	.pagination-top .results, .pagination-bottom .results {
+		padding-top: 7px;
+		}
+    /* end other */
+    
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+		
+}

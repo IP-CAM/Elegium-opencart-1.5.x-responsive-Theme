@@ -54,6 +54,7 @@ class ControllerModuleFeatured extends Controller {
 					'thumb'   	 => $image,
 					'name'    	 => $product_info['name'],
 					'price'   	 => $price,
+					'description' => utf8_substr(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8')), 0, 80) . '...',
 					'special' 	 => $special,
 					'rating'     => $rating,
 					'reviews'    => sprintf($this->language->get('text_reviews'), (int)$product_info['reviews']),
